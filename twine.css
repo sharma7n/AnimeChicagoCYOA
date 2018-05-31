@@ -464,19 +464,27 @@ tw-link,.link,tw-icon,.enchantment-clickblock{
     cursor:pointer
 }
 tw-link,.enchantment-link{
-    color:#4169E1;
+    color: #7082ff;
     font-weight:bold;
     text-decoration:none;
-    transition:color 0.2s ease-in-out
+    transition:color 0.2s ease-in-out;
+    border:  1px solid #4455CE;
+    padding: 0.65em 1em;
+    display: block;
+    margin-bottom: -1em;
+    border-radius: 2px;
+    max-width: 800px;
 }
 tw-enchantment[style^="color"] tw-link:not(:hover),tw-enchantment[style*=" color"] tw-link:not(:hover),tw-enchantment[style^="color"] .enchantment-link:not(:hover),tw-enchantment[style*=" color"] .enchantment-link:not(:hover){
     color:inherit
 }
 tw-link:hover,.enchantment-link:hover{
-    color:#00bfff
+    color:#34DACA;
+    border-color: #34DACA;
 }
 tw-link:active,.enchantment-link:active{
-    color:#DD4B39
+    color:#FF245C;
+    border-color:#FF245C;
 }
 .visited{
     color:#6941e1
@@ -546,16 +554,17 @@ tw-story{
     -moz-flex-direction:column;
     -ms-flex-direction:column;
     flex-direction:column;
-    font:100% Georgia, serif;
+    font:100% 'Source Sans Pro', Tahoma, Helvetica, Arial, sans-serif;
+    font-weight:bold;
     box-sizing:border-box;
     width:100%;
     min-height:100%;
-    font-size:1.5em;
+    font-size: 1.65em;
     line-height:1.5em;
-    padding:5% 20%;
+    padding: 2em 10vw 2em 140px;
     margin:0;
-    background-color:#000;
-    color:#fff
+    background-color:#070B1F;
+    color:#fff;
 }
 tw-passage{
     display:block
@@ -566,20 +575,23 @@ br+br{
     margin:0.8ex 0
 }
 tw-sidebar{
-    left:-5em;
+    left:-115px;
     width:3em;
     position:absolute;
     text-align:center;
-    display:block
+    display:block;
 }
 tw-icon{
     display:block;
-    margin:0.5em 0;
-    opacity:0.1;
-    font-size:2.75em
+    opacity:0.3;
+    font-size: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    height: 90px;
+    margin: 0 0 20px 0;
 }
 tw-icon:hover{
-    opacity:0.3
+    opacity:0.6
 }
 tw-hook:empty,tw-expression:empty{
     display:none
